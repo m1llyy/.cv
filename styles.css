@@ -2,6 +2,11 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+nav{
+    background-color:  rgb(250, 248, 208);
+}
+
+
 img{
     border-radius: 200px;
     height: 200px;
@@ -29,7 +34,7 @@ p{
     width: 100%;
     padding: 25%;
     font-size: 20px;
-    background-color: rgb(135, 100, 201);
+    background-color: rgb(198, 187, 219);
     text-align: center;
     position: relative;
 }
@@ -66,10 +71,24 @@ p{
 }
 
 .programming-skills{
-    margin-left: 50%;
+    margin-left: 10%;
     top: -300px;
     font-weight: bold;
     font-size: 30px;
+    text-align: center;
+}
+
+.programming-skills-text{
+    margin-right: 20%;
+    margin-left: 30%;
+    margin-top: 10%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.box{
+    border-right: 1px solid black;
 }
 
 .work-experience {
@@ -77,12 +96,12 @@ p{
     position: relative;
 }
 
-.job {
+/* .job {
     margin-right: 40%;
     display: flex;
     justify-content: space-between;
     position: relative;
-}
+} */
 
 .dates{
     margin-left:5%;
@@ -93,7 +112,7 @@ p{
 
 .job-details {
     flex: 5;
-    margin-left: 15%;
+    margin-left: 5%;
     position:relative;
 } 
 
@@ -104,4 +123,20 @@ p{
     position: relative;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+@media(min-width: 1028px){
+    .change{
+        background-color: red;
+    }
+    .dates{
+        margin-left:2%;
+        width:50%;
+    }
+    .job{
+        margin-right: 40%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
 }
