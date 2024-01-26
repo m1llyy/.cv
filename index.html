@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,26 @@
     <title>Milly CV</title>
     <link href="styles.css" rel="stylesheet" type=text/css>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
+    <script src="app.js" type="text/javascript"></script>
+
+    <nav class="navbar navbar-light">
+        <div class="align-items-center">
+            <a class="navbar-brand" href="#about-me" style="margin-left: 20px;">About</a>
+            <a class="navbar-brand" href="#experiences">Experiences</a>
+        </div>
+
+        <div class="navbar-icons">
+            <i class="fa fa-github" style="font-size:36px; margin-right: 20px;"></i>
+            <i class="fa fa-linkedin-square" style="font-size:36px; margin-right:20px;"></i>
+        </div>
+
+
+        
+    </nav>
     <div class="container-fluid">
       
             <!-- <td>
@@ -21,53 +38,88 @@
     </div>
    
     <hr> 
-    <div class="container-fluid">
-        <h2>About Me</h2>
-
-        <p class="about-me">I'm a third year computer science/ psychology student at <a href="https://www.albany.edu/" target="_blank" rel="noopener noreferrer"> UAlbany</a>. 
-            I am a tech enthusiast with a heart for understanding minds. I believe in bridging the gap between psychology and computer science to create meangingful user experiences. 
-            I am from Brooklyn, NY and currently based in Albany, NY. Join me on this adventure of bytes and brains.</p>
-    </div>
-
+    <section id="about-me">
+        <div class="container-fluid">
+            <h2>About Me</h2>
+    
+            <p class="about-me">I'm a third year computer science/ psychology student at <a href="https://www.albany.edu/" target="_blank" rel="noopener noreferrer"> UAlbany</a>. 
+                I am a tech enthusiast with a heart for understanding minds. I believe in bridging the gap between psychology and computer science to create meangingful user experiences. 
+                I am from Brooklyn, NY and currently based in Albany, NY. Join me on this adventure of bytes and brains.</p>
+        </div>
+    
+    </section>
+    
 <hr>
-    <div class="container-fluid third-container">
+    <div class="row">
+        <!-- <div class="container-fluid third-container"> -->
+    
+            <div class="container-fluid col-6 box">
+                <p class="creative-skills"> creative</p>
+                <p class="creative-skills-text">I find beauty in simple and clean designs. I believe simplicity and minimalism evokes timelessness, versality, and a feeling of harmony.</p>
+                <ul> 
+                    <li class="skills-list">Figma</li>
+                    <li class="skills-list">Prototyping</li> 
+                    <li class="skills-list">WordPress</li>
+                    <li class="skills-list">Canva</li>
+                </ul>
 
-        <section class="vertical-line"> </section>
-
-        <p class="creative-skills"> creative</p>
-
-        <p class="creative-skills-text">I find beauty in simple and clean designs. I believe simplicity and minimalism evokes timelessness, versality, and a feeling of harmony.</p>
-
-        <ul> 
-            <li class="skills-list">Figma</li>
-            <li class="skills-list">Prototyping</li> 
-            <li class="skills-list">WordPress</li>
-            <li class="skills-list">Canva</li>
-
-        </ul>
-        <p class="programming-skills">programming</p>
-        <p class="programming-skills-text">I find it exciting how even the most complex of things are made up of simple building blocks. Ultimately every line of code is written with a stroke of creativity and problem-solving.  </p>
+            </div>
+            <div class="container-fluid col-6">
+                <p class="programming-skills">programming</p>
+                <p class="programming-skills-text">I find it exciting how even the most complex of things are made up of simple building blocks. Ultimately every line of code is written with a stroke of creativity and problem-solving.  </p>
+            </div>
+            <!-- </div> -->
     </div>
     
+<hr>
 
-    <hr>
+<section id="experiences">
+    <div class="container-fluid-fourth-container"> 
+        <h2 style="text-align: center;"> Experience</h2>
+    
+    
+        <div class="row">
+            <div class="job">
+    
+                <div class="col-lg-6 col-sm-4">
+    
+                    <div class="dates">
+                        <p style="text-align: left;">July 2023 - Aug 2023</p>
+                    </div>
+                </div>
+            
+    
+                <div class="col-lg-6 col-sm-8">
+    
+                    <div class="job-details">
+                        <p style="text-align: left;">Front-End Developer</h3>
+                        <p style="text-align: left; margin-top: -14px;">HarborLab</p>
+                        <ul>
+                            <li class="bullet-points">Led the website redesign project and efficiently enhanced the current website design by integrating WordPress, focusing on visual appeal and user-friendly online presence. </li>
+                            <li class="bullet-points">Engaged in kayaking events, offering valuable assistance for smooth operations and success, while capturing 30+ moments to enrich the website’s multimedia offerings.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="container-fluid-fourth-container"> 
-    <h2 style="text-align: center;"> Experience</h2>
+
 
         <div class="work-experiences">
             <div class="job">
-            <div class="dates">
+            <!-- <div class="dates">
                 <p style="text-align: left;">July 2023 - Aug 2023</p>
-            </div>
-            <div class="job-details">
+            </div> -->
+            <!-- <div class="job-details">
                 <p style="text-align: left;">Front-End Developer</h3>
                 <p style="text-align: left; margin-top: -14px;">HarborLab</p>
                 <ul>
                     <li class="bullet-points">Led the website redesign project and efficiently enhanced the current website design by integrating WordPress, focusing on visual appeal and user-friendly online presence. </li>
                     <li class="bullet-points">Engaged in kayaking events, offering valuable assistance for smooth operations and success, while capturing 30+ moments to enrich the website’s multimedia offerings.</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -110,7 +162,7 @@
 
 <hr>
     
-    <h3>Education</h3>
+    <h3 class="change">Education</h3>
     <table cellspacing="2" cellpadding="8">
         <tr>
             <td>University at Albany</td>
@@ -121,4 +173,5 @@
 
     <a href="contact-me.html">Contact Me</a>
 </body>
+>>>>>>> Stashed changes
 </html>
